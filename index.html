@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <input
+      type="search"
+      class="cityName"
+      onchange="getNewData(this.value)"
+      value="city"
+    />
+    <div class="current">
+      <p class="nowText">Сейчас:</p>
+      <img id="currentImg" src="assets/svg/wi-alien.svg" />
+    </div>
+    <div class="currentTemp"></div>
+    <div class="container">
+      <div class="weatherBox">
+        <img id="forecastIcon" src="assets/svg/wi-alien.svg" />
+      </div>
+      <div class="weatherBox">
+        <img id="forecastIcon" src="assets/svg/wi-alien.svg" />
+      </div>
+      <div class="weatherBox">
+        <img id="forecastIcon" src="assets/svg/wi-alien.svg" />
+      </div>
+    </div>
+    <div class="block"><div id="map" class="map"></div></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.js"></script>
+    <script src="app.js"></script>
+    <script src="query.js" onload="getData()"></script>
+  </body>
+</html>

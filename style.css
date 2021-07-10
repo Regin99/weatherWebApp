@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+
+* {
+  margin: 0 0;
+}
+
+body {
+  background: #303030;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cityName {
+  margin-top: 1%;
+  font-family: "Benne", serif;
+  font-weight: 400;
+  color: #f2f2f2;
+  font-size: 100px;
+  text-align: center;
+  height: 120px;
+  width: 50%;
+  margin-left: 25%;
+  background-color: #303030;
+  -webkit-appearance: none;
+}
+.currentTemp {
+  margin-top: 0;
+  padding-top: 0;
+  font-family: "Benne", serif;
+  font-weight: 400;
+  color: #f2f2f2;
+  font-size: 50px;
+  text-align: center;
+}
+
+.nowText {
+  margin: 0 0;
+  padding: 0 0;
+  font-family: "Benne", serif;
+  font-weight: 400;
+  color: #f2f2f2;
+  font-size: 50px;
+  text-align: center;
+}
+
+.weatherBox {
+  background: #202020;
+  border-radius: 10px;
+  font-size: 30px;
+  color: #f2f2f2;
+  width: 400px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.weatherBox p {
+  display: inline;
+}
+.weatherBox img {
+  width: 200px;
+}
+#currentImg {
+  width: 10%;
+}
+.current {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.map {
+  width: 400px;
+  height: 300px;
+}
+.block {
+  display: flex;
+  justify-content: center;
+}
